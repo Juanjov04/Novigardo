@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Novigardo - Amigurumis y Mucho Más</title>
+  <meta name="description" content="Amigurumis personalizados tejidos a mano con amor. Animales, personajes, flores y más.">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -21,9 +22,7 @@
       <li><a href="#testimonios">Testimonios</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <button class="mobile-menu-btn" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -36,380 +35,128 @@
   </div>
 </section>
 
+<!-- ==================== CUSTOMIZER ==================== -->
 <section id="personalizar" class="personalizar">
   <div class="container">
     <h2 class="section-title">✨ Personaliza tu Amigurumi</h2>
     <p class="section-subtitle">Diseña tu muñeco único paso a paso</p>
     
     <div class="customizer-wrapper">
-      <!-- Left: Preview Panel -->
+      <!-- LEFT: Amigurumi Preview -->
       <div class="customizer-preview">
         <div class="preview-container">
-          <svg id="doll-preview" viewBox="0 0 200 340" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="crochet-texture" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
-                <circle cx="4" cy="4" r="1.5" fill="#000000" opacity="0.05"></circle>
-                <path d="M 0 4 Q 4 0 8 4 Q 4 8 0 4" fill="none" stroke="#000000" stroke-width="0.5" opacity="0.03"></path>
-              </pattern>
-            </defs>
-
-            <!-- BODY GROUPS -->
-            <g id="body-small" style="display:none; transform: scale(0.85) translate(18px, 45px);">
-              <rect x="65" y="125" width="70" height="110" rx="25" class="body-fill" fill="#F5E6D3"></rect>
-              <ellipse cx="55" cy="170" rx="13" ry="32" class="body-fill" fill="#F5E6D3"></ellipse>
-              <ellipse cx="145" cy="170" rx="13" ry="32" class="body-fill" fill="#F5E6D3"></ellipse>
-              <rect x="72" y="228" width="24" height="55" rx="12" class="body-fill" fill="#F5E6D3"></rect>
-              <rect x="104" y="228" width="24" height="55" rx="12" class="body-fill" fill="#F5E6D3"></rect>
-              <rect x="65" y="125" width="70" height="110" rx="25" fill="url(#crochet-texture)"></rect>
-            </g>
-            
-            <g id="body-medium">
-              <rect x="65" y="125" width="70" height="110" rx="25" class="body-fill" fill="#F5E6D3"></rect>
-              <ellipse cx="55" cy="170" rx="13" ry="32" class="body-fill" fill="#F5E6D3"></ellipse>
-              <ellipse cx="145" cy="170" rx="13" ry="32" class="body-fill" fill="#F5E6D3"></ellipse>
-              <rect x="72" y="228" width="24" height="55" rx="12" class="body-fill" fill="#F5E6D3"></rect>
-              <rect x="104" y="228" width="24" height="55" rx="12" class="body-fill" fill="#F5E6D3"></rect>
-              <rect x="65" y="125" width="70" height="110" rx="25" fill="url(#crochet-texture)"></rect>
-              <ellipse cx="55" cy="170" rx="13" ry="32" fill="url(#crochet-texture)"></ellipse>
-              <ellipse cx="145" cy="170" rx="13" ry="32" fill="url(#crochet-texture)"></ellipse>
-              <rect x="72" y="228" width="24" height="55" rx="12" fill="url(#crochet-texture)"></rect>
-              <rect x="104" y="228" width="24" height="55" rx="12" fill="url(#crochet-texture)"></rect>
-            </g>
-            
-            <g id="body-large" style="display:none; transform: scale(1.15) translate(-13px, -35px);">
-              <rect x="65" y="125" width="70" height="110" rx="25" class="body-fill" fill="#F5E6D3"></rect>
-              <ellipse cx="55" cy="170" rx="13" ry="32" class="body-fill" fill="#F5E6D3"></ellipse>
-              <ellipse cx="145" cy="170" rx="13" ry="32" class="body-fill" fill="#F5E6D3"></ellipse>
-              <rect x="72" y="228" width="24" height="55" rx="12" class="body-fill" fill="#F5E6D3"></rect>
-              <rect x="104" y="228" width="24" height="55" rx="12" class="body-fill" fill="#F5E6D3"></rect>
-              <rect x="65" y="125" width="70" height="110" rx="25" fill="url(#crochet-texture)"></rect>
-            </g>
-
-            <!-- CLOTHING GROUPS -->
-            <g id="clothes-none"></g>
-            <g id="clothes-overalls" style="display:none;">
-              <rect x="66" y="165" width="68" height="70" rx="10" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="72" y="228" width="24" height="40" rx="12" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="104" y="228" width="24" height="40" rx="12" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="75" y="130" width="8" height="40" rx="4" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="117" y="130" width="8" height="40" rx="4" class="clothing-fill" fill="#D4A0A0"></rect>
-              <circle cx="79" cy="165" r="4" fill="#ffffff" opacity="0.8"></circle>
-              <circle cx="121" cy="165" r="4" fill="#ffffff" opacity="0.8"></circle>
-              <rect x="66" y="165" width="68" height="70" rx="10" fill="url(#crochet-texture)"></rect>
-            </g>
-            <g id="clothes-dress" style="display:none;">
-              <rect x="65" y="130" width="70" height="50" rx="10" class="clothing-fill" fill="#D4A0A0"></rect>
-              <path d="M 65 170 L 45 230 Q 100 240 155 230 L 135 170 Z" class="clothing-fill" fill="#D4A0A0"></path>
-              <path d="M 65 170 L 45 230 Q 100 240 155 230 L 135 170 Z" fill="url(#crochet-texture)"></path>
-              <rect x="65" y="130" width="70" height="50" rx="10" fill="url(#crochet-texture)"></rect>
-            </g>
-            <g id="clothes-sweater" style="display:none;">
-              <rect x="64" y="125" width="72" height="70" rx="15" class="clothing-fill" fill="#D4A0A0"></rect>
-              <ellipse cx="55" cy="155" rx="14" ry="25" class="clothing-fill" fill="#D4A0A0"></ellipse>
-              <ellipse cx="145" cy="155" rx="14" ry="25" class="clothing-fill" fill="#D4A0A0"></ellipse>
-              <path d="M 85 125 Q 100 140 115 125" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.5"></path>
-              <rect x="64" y="125" width="72" height="70" rx="15" fill="url(#crochet-texture)"></rect>
-            </g>
-            <g id="clothes-skirt" style="display:none;">
-              <path d="M 65 180 L 50 220 Q 100 230 150 220 L 135 180 Z" class="clothing-fill" fill="#D4A0A0"></path>
-              <path d="M 65 180 L 50 220 Q 100 230 150 220 L 135 180 Z" fill="url(#crochet-texture)"></path>
-            </g>
-            <g id="clothes-pants" style="display:none;">
-              <rect x="66" y="180" width="68" height="40" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="72" y="210" width="24" height="60" rx="8" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="104" y="210" width="24" height="60" rx="8" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="66" y="180" width="68" height="40" fill="url(#crochet-texture)"></rect>
-            </g>
-            <g id="clothes-pajamas" style="display:none;">
-              <rect x="64" y="125" width="72" height="100" rx="15" class="clothing-fill" fill="#D4A0A0"></rect>
-              <ellipse cx="55" cy="170" rx="14" ry="33" class="clothing-fill" fill="#D4A0A0"></ellipse>
-              <ellipse cx="145" cy="170" rx="14" ry="33" class="clothing-fill" fill="#D4A0A0"></ellipse>
-              <rect x="71" y="220" width="26" height="60" rx="10" class="clothing-fill" fill="#D4A0A0"></rect>
-              <rect x="103" y="220" width="26" height="60" rx="10" class="clothing-fill" fill="#D4A0A0"></rect>
-              <!-- Star pattern -->
-              <path d="M 80 150 L 83 158 L 92 158 L 85 163 L 87 171 L 80 166 L 73 171 L 75 163 L 68 158 L 77 158 Z" fill="#ffffff" opacity="0.6"></path>
-              <path d="M 120 180 L 123 188 L 132 188 L 125 193 L 127 201 L 120 196 L 113 201 L 115 193 L 108 188 L 117 188 Z" fill="#ffffff" opacity="0.6"></path>
-              <rect x="64" y="125" width="72" height="100" rx="15" fill="url(#crochet-texture)"></rect>
-            </g>
-            <g id="clothes-cape" style="display:none;">
-              <path d="M 70 130 C 50 160, 40 200, 45 240 C 100 250, 155 240, 160 200 C 150 160, 130 130, 130 130 Z" class="clothing-fill" fill="#D4A0A0"></path>
-              <path d="M 70 130 C 50 160, 40 200, 45 240 C 100 250, 155 240, 160 200 C 150 160, 130 130, 130 130 Z" fill="url(#crochet-texture)"></path>
-              <circle cx="100" cy="135" r="6" fill="#F5E6A3"></circle>
-            </g>
-
-            <!-- HEAD GROUPS -->
-            <g id="head-bunny">
-              <ellipse cx="82" cy="15" rx="9" ry="28" class="body-fill" fill="#F5E6D3"></ellipse>
-              <ellipse cx="118" cy="15" rx="9" ry="28" class="body-fill" fill="#F5E6D3"></ellipse>
-              <ellipse cx="82" cy="15" rx="4" ry="20" fill="#FFB5B5" opacity="0.6"></ellipse>
-              <ellipse cx="118" cy="15" rx="4" ry="20" fill="#FFB5B5" opacity="0.6"></ellipse>
-              <ellipse cx="82" cy="15" rx="9" ry="28" fill="url(#crochet-texture)"></ellipse>
-              <ellipse cx="118" cy="15" rx="9" ry="28" fill="url(#crochet-texture)"></ellipse>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <path d="M 96 85 Q 100 89 104 85" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-bear" style="display:none;">
-              <circle cx="65" cy="40" r="13" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="135" cy="40" r="13" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="65" cy="40" r="6" fill="#FFB5B5" opacity="0.6"></circle>
-              <circle cx="135" cy="40" r="6" fill="#FFB5B5" opacity="0.6"></circle>
-              <circle cx="65" cy="40" r="13" fill="url(#crochet-texture)"></circle>
-              <circle cx="135" cy="40" r="13" fill="url(#crochet-texture)"></circle>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <ellipse cx="100" cy="85" rx="10" ry="7" fill="#ffffff" opacity="0.8"></ellipse>
-              <path d="M 96 85 Q 100 88 104 85" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <circle cx="100" cy="81" r="2.5" fill="#2C2C2C"></circle>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-cat" style="display:none;">
-              <path d="M 60 45 L 75 25 L 90 40 Z" class="body-fill" fill="#F5E6D3"></path>
-              <path d="M 140 45 L 125 25 L 110 40 Z" class="body-fill" fill="#F5E6D3"></path>
-              <path d="M 65 42 L 75 32 L 85 40 Z" fill="#FFB5B5" opacity="0.6"></path>
-              <path d="M 135 42 L 125 32 L 115 40 Z" fill="#FFB5B5" opacity="0.6"></path>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <path d="M 97 84 Q 100 87 103 84 Q 100 87 97 84" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <path d="M 97 84 Q 94 82 97 84" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <polygon points="100,81 98,79 102,79" fill="#FFB5B5"></polygon>
-              <!-- Whiskers -->
-              <line x1="60" y1="75" x2="75" y2="78" stroke="#2C2C2C" stroke-width="1"></line>
-              <line x1="60" y1="83" x2="75" y2="81" stroke="#2C2C2C" stroke-width="1"></line>
-              <line x1="140" y1="75" x2="125" y2="78" stroke="#2C2C2C" stroke-width="1"></line>
-              <line x1="140" y1="83" x2="125" y2="81" stroke="#2C2C2C" stroke-width="1"></line>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-dog" style="display:none;">
-              <path d="M 65 40 C 45 40, 40 80, 55 90 C 65 95, 75 70, 75 55 Z" class="body-fill" fill="#F5E6D3"></path>
-              <path d="M 135 40 C 155 40, 160 80, 145 90 C 135 95, 125 70, 125 55 Z" class="body-fill" fill="#F5E6D3"></path>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="100" cy="81" r="3" fill="#2C2C2C"></circle>
-              <path d="M 96 86 Q 100 89 104 86" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-unicorn" style="display:none;">
-              <path d="M 95 30 L 100 5 L 105 30 Z" fill="#F5E6A3"></path>
-              <path d="M 95 20 L 105 15 M 95 25 L 105 20 M 96 10 L 104 7" stroke="#D1B5E8" stroke-width="1"></path>
-              <circle cx="75" cy="45" r="8" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="125" cy="45" r="8" class="body-fill" fill="#F5E6D3"></circle>
-              <path d="M 85 35 C 75 10, 60 20, 55 45 C 50 70, 65 60, 70 45" fill="#D1B5E8"></path>
-              <path d="M 115 35 C 125 10, 140 20, 145 45 C 150 70, 135 60, 130 45" fill="#F0B5B5"></path>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <path d="M 96 85 Q 100 89 104 85" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-dinosaur" style="display:none;">
-              <path d="M 70 40 L 75 25 L 85 35 L 95 20 L 105 32 L 115 22 L 125 38 Z" fill="#A5D6A7"></path>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <ellipse cx="100" cy="85" rx="12" ry="8" class="body-fill" fill="#F5E6D3" filter="brightness(0.9)"></ellipse>
-              <circle cx="95" cy="83" r="1.5" fill="#2C2C2C"></circle>
-              <circle cx="105" cy="83" r="1.5" fill="#2C2C2C"></circle>
-              <path d="M 96 88 Q 100 91 104 88" fill="none" stroke="#2C2C2C" stroke-width="1" stroke-linecap="round"></path>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-character" style="display:none;">
-              <path d="M 85 45 L 90 25 L 100 40 L 110 25 L 115 45 Z" fill="#F5E6A3"></path>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <!-- Star eyes -->
-              <path d="M 87 68 L 89 71 L 92 71 L 89 73 L 90 76 L 87 74 L 84 76 L 85 73 L 82 71 L 85 71 Z" fill="#2C2C2C"></path>
-              <path d="M 113 68 L 115 71 L 118 71 L 115 73 L 116 76 L 113 74 L 110 76 L 111 73 L 108 71 L 111 71 Z" fill="#2C2C2C"></path>
-              <path d="M 96 85 C 98 90, 102 90, 104 85" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <g id="head-person" style="display:none;">
-              <path d="M 55 75 C 55 35, 145 35, 145 75 C 150 95, 145 110, 135 110 C 125 110, 125 80, 125 80 C 115 50, 85 50, 75 80 C 75 80, 75 110, 65 110 C 55 110, 50 95, 55 75 Z" fill="#8B5A2B"></path>
-              <circle cx="100" cy="75" r="45" class="body-fill" fill="#F5E6D3"></circle>
-              <circle cx="100" cy="75" r="45" fill="url(#crochet-texture)"></circle>
-              <path d="M 60 65 C 60 40, 140 40, 140 65 C 130 50, 70 50, 60 65 Z" fill="#8B5A2B"></path>
-              <circle cx="87" cy="72" r="3" fill="#2C2C2C"></circle>
-              <circle cx="113" cy="72" r="3" fill="#2C2C2C"></circle>
-              <path d="M 96 85 Q 100 89 104 85" fill="none" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"></path>
-              <circle cx="82" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-              <circle cx="118" cy="80" r="5" fill="#FFB5B5" opacity="0.4"></circle>
-            </g>
-
-            <!-- ACCESSORY GROUPS -->
-            <g id="acc-bow" style="display:none;">
-              <path d="M 125 45 L 140 35 L 135 50 L 145 55 L 130 55 Z" fill="#E88B8B"></path>
-              <circle cx="130" cy="48" r="4" fill="#FFFFFF"></circle>
-            </g>
-            <g id="acc-necklace" style="display:none;">
-              <path d="M 75 125 Q 100 135 125 125" fill="none" stroke="#F5E6A3" stroke-width="3" stroke-dasharray="4 2"></path>
-            </g>
-            <g id="acc-glasses" style="display:none;">
-              <circle cx="87" cy="72" r="9" fill="none" stroke="#2C2C2C" stroke-width="1.5"></circle>
-              <circle cx="113" cy="72" r="9" fill="none" stroke="#2C2C2C" stroke-width="1.5"></circle>
-              <line x1="96" y1="72" x2="104" y2="72" stroke="#2C2C2C" stroke-width="1.5"></line>
-              <line x1="78" y1="72" x2="70" y2="68" stroke="#2C2C2C" stroke-width="1.5"></line>
-              <line x1="122" y1="72" x2="130" y2="68" stroke="#2C2C2C" stroke-width="1.5"></line>
-            </g>
-            <g id="acc-flowers" style="display:none;">
-              <circle cx="70" cy="45" r="5" fill="#FFB5B5"></circle>
-              <circle cx="76" cy="40" r="5" fill="#FFB5B5"></circle>
-              <circle cx="65" cy="40" r="5" fill="#FFB5B5"></circle>
-              <circle cx="70" cy="35" r="5" fill="#FFB5B5"></circle>
-              <circle cx="70" cy="40" r="3" fill="#F5E6A3"></circle>
-            </g>
-            <g id="acc-hat" style="display:none;">
-              <path d="M 70 45 Q 100 10 130 45 Z" fill="#8BB5E8"></path>
-              <circle cx="100" cy="15" r="8" fill="#FFFFFF"></circle>
-              <rect x="65" y="42" width="70" height="8" rx="4" fill="#8BB5E8"></rect>
-              <path d="M 70 45 Q 100 10 130 45 Z" fill="url(#crochet-texture)"></path>
-            </g>
-            <g id="acc-scarf" style="display:none;">
-              <rect x="70" y="115" width="60" height="15" rx="7" fill="#E88B8B"></rect>
-              <rect x="110" y="125" width="12" height="35" rx="4" fill="#E88B8B"></rect>
-              <rect x="70" y="115" width="60" height="15" rx="7" fill="url(#crochet-texture)"></rect>
-              <rect x="110" y="125" width="12" height="35" rx="4" fill="url(#crochet-texture)"></rect>
-              <!-- Fringes -->
-              <line x1="112" y1="160" x2="112" y2="165" stroke="#E88B8B" stroke-width="1.5"></line>
-              <line x1="116" y1="160" x2="116" y2="165" stroke="#E88B8B" stroke-width="1.5"></line>
-              <line x1="120" y1="160" x2="120" y2="165" stroke="#E88B8B" stroke-width="1.5"></line>
-            </g>
-            <g id="acc-bag" style="display:none;">
-              <rect x="40" y="180" width="22" height="20" rx="4" fill="#B5896E"></rect>
-              <path d="M 45 180 Q 51 165 57 180" fill="none" stroke="#B5896E" stroke-width="2"></path>
-              <circle cx="51" cy="188" r="2" fill="#F5E6A3"></circle>
-            </g>
-            <g id="acc-crown" style="display:none;">
-              <path d="M 85 40 L 90 25 L 100 35 L 110 25 L 115 40 Z" fill="#F5E6A3"></path>
-              <circle cx="90" cy="25" r="2" fill="#E88B8B"></circle>
-              <circle cx="100" cy="35" r="2" fill="#A5C8E1"></circle>
-              <circle cx="110" cy="25" r="2" fill="#E88B8B"></circle>
-            </g>
-          </svg>
+          <div class="amigurumi-scene" id="amigurumi-scene">
+            <!-- The amigurumi doll built with CSS -->
+            <div class="ami-doll" id="ami-doll">
+              <!-- EARS (change by head type) -->
+              <div class="ami-ears" id="ami-ears">
+                <div class="ami-ear ami-ear-left bunny-ear"><div class="ear-inner"></div></div>
+                <div class="ami-ear ami-ear-right bunny-ear"><div class="ear-inner"></div></div>
+              </div>
+              <!-- HEAD -->
+              <div class="ami-head" id="ami-head">
+                <div class="ami-face">
+                  <div class="ami-eye ami-eye-left"><div class="eye-shine"></div></div>
+                  <div class="ami-eye ami-eye-right"><div class="eye-shine"></div></div>
+                  <div class="ami-blush ami-blush-left"></div>
+                  <div class="ami-blush ami-blush-right"></div>
+                  <div class="ami-mouth"></div>
+                  <!-- Extra face parts for specific types -->
+                  <div class="ami-nose" id="ami-nose" style="display:none;"></div>
+                  <div class="ami-whiskers" id="ami-whiskers" style="display:none;">
+                    <div class="whisker wl1"></div><div class="whisker wl2"></div>
+                    <div class="whisker wr1"></div><div class="whisker wr2"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- HORN (unicorn) -->
+              <div class="ami-horn" id="ami-horn" style="display:none;"></div>
+              <!-- BODY -->
+              <div class="ami-body" id="ami-body">
+                <!-- Clothing layer -->
+                <div class="ami-clothing" id="ami-clothing"></div>
+              </div>
+              <!-- ARMS -->
+              <div class="ami-arm ami-arm-left" id="ami-arm-left"></div>
+              <div class="ami-arm ami-arm-right" id="ami-arm-right"></div>
+              <!-- LEGS -->
+              <div class="ami-leg ami-leg-left" id="ami-leg-left"></div>
+              <div class="ami-leg ami-leg-right" id="ami-leg-right"></div>
+              <!-- ACCESSORIES (layered on top) -->
+              <div class="ami-accessory" id="ami-accessory"></div>
+            </div>
+            <!-- Shadow -->
+            <div class="ami-shadow"></div>
+          </div>
+          <!-- Reference photo strip -->
+          <div class="ref-strip">
+            <p class="ref-title">Así se vería en la vida real:</p>
+            <div class="ref-photos" id="ref-photos">
+              <img src="assets/gallery/conejito.jpg" alt="Referencia" class="ref-thumb active">
+              <img src="assets/gallery/bunny_overol.jpg" alt="Referencia" class="ref-thumb">
+            </div>
+          </div>
         </div>
         <div class="preview-price">
-          <span class="price-label">Precio Total:</span>
+          <span class="price-label">Precio Estimado:</span>
           <span class="price-amount" id="total-price">$18.00</span>
         </div>
       </div>
-      
-      <!-- Right: Customization Panel -->
+
+      <!-- RIGHT: Controls -->
       <div class="customizer-panel">
-        <!-- Step Indicators -->
         <div class="step-indicators">
-          <div class="step-indicator active" data-step="1">
-            <span class="step-number">1</span>
-            <span class="step-label">Cabeza</span>
-          </div>
-          <div class="step-indicator" data-step="2">
-            <span class="step-number">2</span>
-            <span class="step-label">Cuerpo</span>
-          </div>
-          <div class="step-indicator" data-step="3">
-            <span class="step-number">3</span>
-            <span class="step-label">Ropa</span>
-          </div>
-          <div class="step-indicator" data-step="4">
-            <span class="step-number">4</span>
-            <span class="step-label">Accesorios</span>
-          </div>
+          <div class="step-indicator active" data-step="1"><span class="step-number">1</span><span class="step-label">Cabeza</span></div>
+          <div class="step-indicator" data-step="2"><span class="step-number">2</span><span class="step-label">Cuerpo</span></div>
+          <div class="step-indicator" data-step="3"><span class="step-number">3</span><span class="step-label">Ropa</span></div>
+          <div class="step-indicator" data-step="4"><span class="step-number">4</span><span class="step-label">Accesorios</span></div>
         </div>
-        
-        <!-- Steps Container -->
+
         <div class="steps-container">
           <!-- STEP 1: Head -->
           <div class="step active" data-step="1">
             <h3 class="step-title">Elige la cabecita 🧸</h3>
             <div class="options-grid">
               <div class="option-card selected" data-option="bunny" data-price="8" data-category="head">
-                <div class="option-icon">🐰</div>
-                <div class="option-name">Conejito</div>
-                <div class="option-price">+$8</div>
+                <div class="option-icon">🐰</div><div class="option-name">Conejito</div><div class="option-price">+$8</div>
               </div>
               <div class="option-card" data-option="bear" data-price="8" data-category="head">
-                <div class="option-icon">🐻</div>
-                <div class="option-name">Osito</div>
-                <div class="option-price">+$8</div>
+                <div class="option-icon">🐻</div><div class="option-name">Osito</div><div class="option-price">+$8</div>
               </div>
               <div class="option-card" data-option="cat" data-price="8" data-category="head">
-                <div class="option-icon">🐱</div>
-                <div class="option-name">Gatito</div>
-                <div class="option-price">+$8</div>
+                <div class="option-icon">🐱</div><div class="option-name">Gatito</div><div class="option-price">+$8</div>
               </div>
               <div class="option-card" data-option="dog" data-price="8" data-category="head">
-                <div class="option-icon">🐶</div>
-                <div class="option-name">Perrito</div>
-                <div class="option-price">+$8</div>
+                <div class="option-icon">🐶</div><div class="option-name">Perrito</div><div class="option-price">+$8</div>
               </div>
               <div class="option-card" data-option="unicorn" data-price="10" data-category="head">
-                <div class="option-icon">🦄</div>
-                <div class="option-name">Unicornio</div>
-                <div class="option-price">+$10</div>
+                <div class="option-icon">🦄</div><div class="option-name">Unicornio</div><div class="option-price">+$10</div>
               </div>
-              <div class="option-card" data-option="dinosaur" data-price="10" data-category="head">
-                <div class="option-icon">🦕</div>
-                <div class="option-name">Dinosaurio</div>
-                <div class="option-price">+$10</div>
+              <div class="option-card" data-option="dino" data-price="10" data-category="head">
+                <div class="option-icon">🦕</div><div class="option-name">Dinosaurio</div><div class="option-price">+$10</div>
               </div>
               <div class="option-card" data-option="character" data-price="12" data-category="head">
-                <div class="option-icon">🎭</div>
-                <div class="option-name">Personaje Animado</div>
-                <div class="option-price">+$12</div>
+                <div class="option-icon">🎭</div><div class="option-name">Personaje</div><div class="option-price">+$12</div>
               </div>
               <div class="option-card" data-option="person" data-price="15" data-category="head">
-                <div class="option-icon">👤</div>
-                <div class="option-name">Persona</div>
-                <div class="option-price">+$15</div>
+                <div class="option-icon">👤</div><div class="option-name">Persona</div><div class="option-price">+$15</div>
               </div>
             </div>
           </div>
-          
-          <!-- STEP 2: Body Size + Color -->
+
+          <!-- STEP 2: Body -->
           <div class="step" data-step="2">
-            <h3 class="step-title">Elige el tamaño y color 📏</h3>
+            <h3 class="step-title">Cuerpo y colores 🎨</h3>
             <h4 class="substep-title">Tamaño</h4>
             <div class="options-grid options-grid-3">
               <div class="option-card" data-option="small" data-price="10" data-category="size">
-                <div class="option-icon">🔹</div>
-                <div class="option-name">Pequeño</div>
-                <div class="option-detail">15 cm</div>
-                <div class="option-price">+$10</div>
+                <div class="option-icon">🔹</div><div class="option-name">Pequeño</div><div class="option-detail">~15 cm</div><div class="option-price">+$10</div>
               </div>
               <div class="option-card selected" data-option="medium" data-price="18" data-category="size">
-                <div class="option-icon">🔷</div>
-                <div class="option-name">Mediano</div>
-                <div class="option-detail">25 cm</div>
-                <div class="option-price">+$18</div>
+                <div class="option-icon">🔷</div><div class="option-name">Mediano</div><div class="option-detail">~25 cm</div><div class="option-price">+$18</div>
               </div>
               <div class="option-card" data-option="large" data-price="28" data-category="size">
-                <div class="option-icon">💎</div>
-                <div class="option-name">Grande</div>
-                <div class="option-detail">35 cm</div>
-                <div class="option-price">+$28</div>
+                <div class="option-icon">💎</div><div class="option-name">Grande</div><div class="option-detail">~35 cm</div><div class="option-price">+$28</div>
               </div>
             </div>
             <h4 class="substep-title">Color del cuerpo</h4>
@@ -426,50 +173,28 @@
               <div class="color-option" data-color="#2C2C2C" title="Negro" style="background:#2C2C2C"></div>
             </div>
           </div>
-          
+
           <!-- STEP 3: Clothing -->
           <div class="step" data-step="3">
             <h3 class="step-title">Elige la ropita 👗</h3>
             <div class="options-grid">
               <div class="option-card selected" data-option="none" data-price="0" data-category="clothing">
-                <div class="option-icon">✨</div>
-                <div class="option-name">Sin ropa</div>
-                <div class="option-price">+$0</div>
+                <div class="option-icon">✨</div><div class="option-name">Sin ropa</div><div class="option-price">+$0</div>
               </div>
               <div class="option-card" data-option="overalls" data-price="5" data-category="clothing">
-                <div class="option-icon">👖</div>
-                <div class="option-name">Overol</div>
-                <div class="option-price">+$5</div>
+                <div class="option-icon">👖</div><div class="option-name">Overol</div><div class="option-price">+$5</div>
               </div>
               <div class="option-card" data-option="dress" data-price="6" data-category="clothing">
-                <div class="option-icon">👗</div>
-                <div class="option-name">Vestido</div>
-                <div class="option-price">+$6</div>
+                <div class="option-icon">👗</div><div class="option-name">Vestido</div><div class="option-price">+$6</div>
               </div>
               <div class="option-card" data-option="sweater" data-price="4" data-category="clothing">
-                <div class="option-icon">🧥</div>
-                <div class="option-name">Suéter</div>
-                <div class="option-price">+$4</div>
+                <div class="option-icon">🧥</div><div class="option-name">Suéter</div><div class="option-price">+$4</div>
               </div>
               <div class="option-card" data-option="skirt" data-price="4" data-category="clothing">
-                <div class="option-icon">💃</div>
-                <div class="option-name">Falda</div>
-                <div class="option-price">+$4</div>
-              </div>
-              <div class="option-card" data-option="pants" data-price="4" data-category="clothing">
-                <div class="option-icon">👖</div>
-                <div class="option-name">Pantalón</div>
-                <div class="option-price">+$4</div>
-              </div>
-              <div class="option-card" data-option="pajamas" data-price="5" data-category="clothing">
-                <div class="option-icon">🌙</div>
-                <div class="option-name">Pijama</div>
-                <div class="option-price">+$5</div>
+                <div class="option-icon">💃</div><div class="option-name">Falda</div><div class="option-price">+$4</div>
               </div>
               <div class="option-card" data-option="cape" data-price="8" data-category="clothing">
-                <div class="option-icon">🦸</div>
-                <div class="option-name">Capa</div>
-                <div class="option-price">+$8</div>
+                <div class="option-icon">🦸</div><div class="option-name">Capa</div><div class="option-price">+$8</div>
               </div>
             </div>
             <h4 class="substep-title" id="clothing-color-title" style="display:none;">Color de la ropa</h4>
@@ -480,63 +205,46 @@
               <div class="color-option" data-color="#F5E6A3" title="Amarillo" style="background:#F5E6A3"></div>
               <div class="color-option" data-color="#D1B5E8" title="Lavanda" style="background:#D1B5E8"></div>
               <div class="color-option" data-color="#E88B8B" title="Rojo" style="background:#E88B8B"></div>
-              <div class="color-option" data-color="#8BB5E8" title="Azul oscuro" style="background:#8BB5E8"></div>
               <div class="color-option" data-color="#FFFFFF" title="Blanco" style="background:#FFFFFF"></div>
+              <div class="color-option" data-color="#4A3728" title="Café" style="background:#4A3728"></div>
             </div>
           </div>
-          
-          <!-- STEP 4: Accessories (MULTI-SELECT) -->
+
+          <!-- STEP 4: Accessories -->
           <div class="step" data-step="4">
-            <h3 class="step-title">Elige los accesorios 🎀</h3>
-            <p class="step-hint">Puedes elegir varios accesorios</p>
+            <h3 class="step-title">Accesorios 🎀</h3>
+            <p class="step-hint">Puedes elegir varios</p>
             <div class="options-grid">
               <div class="option-card" data-option="bow" data-price="2" data-category="accessory">
-                <div class="option-icon">🎀</div>
-                <div class="option-name">Moño</div>
-                <div class="option-price">+$2</div>
-              </div>
-              <div class="option-card" data-option="necklace" data-price="2" data-category="accessory">
-                <div class="option-icon">📿</div>
-                <div class="option-name">Collar</div>
-                <div class="option-price">+$2</div>
+                <div class="option-icon">🎀</div><div class="option-name">Moño</div><div class="option-price">+$2</div>
               </div>
               <div class="option-card" data-option="glasses" data-price="3" data-category="accessory">
-                <div class="option-icon">👓</div>
-                <div class="option-name">Lentes</div>
-                <div class="option-price">+$3</div>
+                <div class="option-icon">👓</div><div class="option-name">Lentes</div><div class="option-price">+$3</div>
               </div>
-              <div class="option-card" data-option="flowers" data-price="3" data-category="accessory">
-                <div class="option-icon">🌸</div>
-                <div class="option-name">Flores</div>
-                <div class="option-price">+$3</div>
+              <div class="option-card" data-option="flower" data-price="3" data-category="accessory">
+                <div class="option-icon">🌸</div><div class="option-name">Flor</div><div class="option-price">+$3</div>
               </div>
               <div class="option-card" data-option="hat" data-price="4" data-category="accessory">
-                <div class="option-icon">🎩</div>
-                <div class="option-name">Gorrito</div>
-                <div class="option-price">+$4</div>
+                <div class="option-icon">🎩</div><div class="option-name">Gorrito</div><div class="option-price">+$4</div>
               </div>
               <div class="option-card" data-option="scarf" data-price="4" data-category="accessory">
-                <div class="option-icon">🧣</div>
-                <div class="option-name">Bufanda</div>
-                <div class="option-price">+$4</div>
+                <div class="option-icon">🧣</div><div class="option-name">Bufanda</div><div class="option-price">+$4</div>
               </div>
               <div class="option-card" data-option="bag" data-price="4" data-category="accessory">
-                <div class="option-icon">👜</div>
-                <div class="option-name">Bolsito</div>
-                <div class="option-price">+$4</div>
+                <div class="option-icon">👜</div><div class="option-name">Bolsito</div><div class="option-price">+$4</div>
+              </div>
+              <div class="option-card" data-option="heart" data-price="2" data-category="accessory">
+                <div class="option-icon">❤️</div><div class="option-name">Corazón</div><div class="option-price">+$2</div>
               </div>
               <div class="option-card" data-option="crown" data-price="5" data-category="accessory">
-                <div class="option-icon">👑</div>
-                <div class="option-name">Corona</div>
-                <div class="option-price">+$5</div>
+                <div class="option-icon">👑</div><div class="option-name">Corona</div><div class="option-price">+$5</div>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Navigation Buttons -->
+
         <div class="step-nav">
-          <button class="btn btn-secondary" id="btn-prev" style="visibility:hidden;">← Anterior</button>
+          <button class="btn btn-secondary" id="btn-prev" style="display:none;">← Anterior</button>
           <button class="btn btn-primary" id="btn-next">Siguiente →</button>
           <button class="btn btn-cta" id="btn-order" style="display:none;">📱 Pedir por Instagram</button>
         </div>
@@ -545,6 +253,7 @@
   </div>
 </section>
 
+<!-- ==================== GALLERY ==================== -->
 <section id="galeria" class="galeria">
   <div class="container">
     <h2 class="section-title">📸 Nuestra Galería</h2>
@@ -553,38 +262,50 @@
       <button class="filter-btn active" data-filter="all">Todos</button>
       <button class="filter-btn" data-filter="animals">Animales</button>
       <button class="filter-btn" data-filter="characters">Personajes</button>
-      <button class="filter-btn" data-filter="people">Profesiones</button>
+      <button class="filter-btn" data-filter="flowers">Flores</button>
+      <button class="filter-btn" data-filter="people">Personalizados</button>
+      <button class="filter-btn" data-filter="accessories">Accesorios</button>
     </div>
     <div class="gallery-grid">
-      <!-- 8 gallery placeholders -->
-      <div class="gallery-item" data-category="animals">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFB5B5, #FFD1D1);">🐰<span>Conejita Rosa</span></div>
-      </div>
-      <div class="gallery-item" data-category="animals">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #B5896E, #D4A0A0);">🐻<span>Osito de Felpa</span></div>
-      </div>
-      <div class="gallery-item" data-category="animals">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #A5C8E1, #B5E8E8);">🐱<span>Gatito Soñador</span></div>
-      </div>
-      <div class="gallery-item" data-category="characters">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #D1B5E8, #E8B5D1);">🦄<span>Unicornio Mágico</span></div>
-      </div>
-      <div class="gallery-item" data-category="characters">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #A5D6A7, #C8E8B5);">🦕<span>Dino Aventurero</span></div>
-      </div>
-      <div class="gallery-item" data-category="characters">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #F5E6A3, #F5C7A3);">🎭<span>Héroe Favorito</span></div>
-      </div>
-      <div class="gallery-item" data-category="people">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #E88B8B, #F0B5B5);">👩‍⚕️<span>Enfermera Heroína</span></div>
-      </div>
-      <div class="gallery-item" data-category="people">
-        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #8BB5E8, #A5C8E1);">👨‍🏫<span>Maestro Amigable</span></div>
-      </div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/canasta_flores.jpg" alt="Canasta de Flores"><div class="gallery-overlay"><span>Canasta de Flores</span></div></div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/ramo_girasoles.jpg" alt="Ramo de Girasoles"><div class="gallery-overlay"><span>Ramo de Girasoles</span></div></div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/tulipanes_azules.jpg" alt="Tulipanes Azules"><div class="gallery-overlay"><span>Tulipanes Azules</span></div></div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/tulipanes_rojo.jpg" alt="Tulipanes Rojos"><div class="gallery-overlay"><span>Tulipanes Rojos</span></div></div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/girasoles_mini.jpg" alt="Mini Girasoles"><div class="gallery-overlay"><span>Mini Girasoles</span></div></div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/tulipanes_variados.jpg" alt="Tulipanes Variados"><div class="gallery-overlay"><span>Tulipanes Variados</span></div></div>
+      <div class="gallery-item" data-category="flowers"><img src="assets/gallery/corazon_rosas.jpg" alt="Corazón de Rosas"><div class="gallery-overlay"><span>Corazón de Rosas</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/coraline.jpg" alt="Coraline"><div class="gallery-overlay"><span>Coraline</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/coraline_botones.jpg" alt="Coraline Botones"><div class="gallery-overlay"><span>Coraline (Ojos de Botón)</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/jack_skellington.jpg" alt="Jack Skellington"><div class="gallery-overlay"><span>Jack Skellington</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/deadpool.jpg" alt="Deadpool"><div class="gallery-overlay"><span>Deadpool</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/spiderman.jpg" alt="Spider-Man"><div class="gallery-overlay"><span>Spider-Man</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/miles_morales.jpg" alt="Miles Morales"><div class="gallery-overlay"><span>Miles Morales</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/jake_perro.jpg" alt="Jake el Perro"><div class="gallery-overlay"><span>Jake el Perro</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/scooby_doo.jpg" alt="Scooby Doo"><div class="gallery-overlay"><span>Scooby Doo</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/bob_esponja.jpg" alt="Bob Esponja"><div class="gallery-overlay"><span>Bob Esponja</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/snoopy.jpg" alt="Snoopy"><div class="gallery-overlay"><span>Snoopy</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/dragon_rojo.jpg" alt="Dragón Rojo"><div class="gallery-overlay"><span>Dragón Rojo</span></div></div>
+      <div class="gallery-item" data-category="characters"><img src="assets/gallery/one_piece.jpg" alt="One Piece Trio"><div class="gallery-overlay"><span>One Piece Trio</span></div></div>
+      <div class="gallery-item" data-category="animals"><img src="assets/gallery/ajolote.jpg" alt="Ajolote"><div class="gallery-overlay"><span>Ajolote con Corazón</span></div></div>
+      <div class="gallery-item" data-category="animals"><img src="assets/gallery/conejito.jpg" alt="Conejito"><div class="gallery-overlay"><span>Conejito</span></div></div>
+      <div class="gallery-item" data-category="animals"><img src="assets/gallery/bunny_overol.jpg" alt="Bunny con Overol"><div class="gallery-overlay"><span>Bunny con Overol</span></div></div>
+      <div class="gallery-item" data-category="animals"><img src="assets/gallery/gallinas.jpg" alt="Gallinas"><div class="gallery-overlay"><span>Gallinas y Pollitos</span></div></div>
+      <div class="gallery-item" data-category="animals"><img src="assets/gallery/enderman.jpg" alt="Enderman"><div class="gallery-overlay"><span>Enderman</span></div></div>
+      <div class="gallery-item" data-category="animals"><img src="assets/gallery/mini_bears.jpg" alt="Mini Bears"><div class="gallery-overlay"><span>Mini Bears</span></div></div>
+      <div class="gallery-item" data-category="people"><img src="assets/gallery/ingeniera.jpg" alt="Ingeniera"><div class="gallery-overlay"><span>Amigurumi de Ingeniera</span></div></div>
+      <div class="gallery-item" data-category="people"><img src="assets/gallery/muneco_traje.jpg" alt="Muñeco con Traje"><div class="gallery-overlay"><span>Muñeco con Traje</span></div></div>
+      <div class="gallery-item" data-category="people"><img src="assets/gallery/muneca_cumple.jpg" alt="Muñeca Cumpleaños"><div class="gallery-overlay"><span>Muñeca de Cumpleaños</span></div></div>
+      <div class="gallery-item" data-category="people"><img src="assets/gallery/pareja_gorras.jpg" alt="Pareja"><div class="gallery-overlay"><span>Pareja con Gorras</span></div></div>
+      <div class="gallery-item" data-category="people"><img src="assets/gallery/nacimiento.jpg" alt="Nacimiento"><div class="gallery-overlay"><span>Nacimiento</span></div></div>
+      <div class="gallery-item" data-category="people"><img src="assets/gallery/baby_inosuke.jpg" alt="Baby Inosuke"><div class="gallery-overlay"><span>Baby Inosuke</span></div></div>
+      <div class="gallery-item" data-category="accessories"><img src="assets/gallery/llaveros_flor.jpg" alt="Llaveros Flores"><div class="gallery-overlay"><span>Llaveros de Flores</span></div></div>
+      <div class="gallery-item" data-category="accessories"><img src="assets/gallery/llaveros_hongo.jpg" alt="Llaveros Hongos"><div class="gallery-overlay"><span>Llaveros de Hongos</span></div></div>
+      <div class="gallery-item" data-category="accessories"><img src="assets/gallery/sid_bolso.jpg" alt="Sid Bolso"><div class="gallery-overlay"><span>Sid para Bolso</span></div></div>
     </div>
   </div>
 </section>
 
+<!-- ==================== ABOUT ==================== -->
 <section id="nosotros" class="nosotros">
   <div class="container">
     <h2 class="section-title">💝 Sobre Nosotros</h2>
@@ -600,48 +321,21 @@
           <div class="feature"><span class="feature-icon">📦</span><span>Envío cuidadoso</span></div>
         </div>
       </div>
-      <div class="about-image">
-        <img src="assets/logo.jpg" alt="Novigardo Logo">
-      </div>
+      <div class="about-image"><img src="assets/logo.jpg" alt="Novigardo Logo"></div>
     </div>
   </div>
 </section>
 
+<!-- ==================== TESTIMONIALS ==================== -->
 <section id="testimonios" class="testimonios">
   <div class="container">
     <h2 class="section-title">⭐ Lo que dicen nuestros clientes</h2>
     <div class="testimonials-wrapper">
       <div class="testimonials-track">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"¡Increíble trabajo! Pedí un perrito idéntico a mi mascota y quedó hermoso. Los detalles son impresionantes."</p>
-          <div class="testimonial-author"><span class="author-name">María G.</span><span class="author-detail">Cliente Feliz</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"La calidad de los materiales y el amor con el que están hechos se nota en cada puntada. Súper recomendado."</p>
-          <div class="testimonial-author"><span class="author-name">Carlos V.</span><span class="author-detail">Comprador</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"Pedí un regalo de aniversario personalizado y a mi novia le encantó. La atención fue excelente en todo momento."</p>
-          <div class="testimonial-author"><span class="author-name">Alejandro P.</span><span class="author-detail">Cliente Satisfecho</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"Me sorprendió la rapidez y el cuidado con el que llegó el paquete. El amigurumi es suave y bellísimo."</p>
-          <div class="testimonial-author"><span class="author-name">Laura M.</span><span class="author-detail">Cliente Recurrente</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"Hicieron un muñeco de mi hijo con su traje de superhéroe favorito. Una verdadera obra de arte."</p>
-          <div class="testimonial-author"><span class="author-name">Sofía R.</span><span class="author-detail">Mamá Feliz</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial-text">"El mejor regalo que pude haber dado. Ya quiero pedir mi próximo amigurumi con ellos."</p>
-          <div class="testimonial-author"><span class="author-name">Daniel T.</span><span class="author-detail">Cliente Feliz</span></div>
-        </div>
+        <div class="testimonial-card"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">"¡Increíble trabajo! Pedí un perrito idéntico a mi mascota y quedó hermoso."</p><div class="testimonial-author"><span class="author-name">María G.</span><span class="author-detail">Cliente Feliz</span></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">"La calidad de los materiales y el amor se nota en cada puntada. Súper recomendado."</p><div class="testimonial-author"><span class="author-name">Carlos V.</span><span class="author-detail">Comprador</span></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">"Pedí un regalo de aniversario personalizado y a mi novia le encantó."</p><div class="testimonial-author"><span class="author-name">Alejandro P.</span><span class="author-detail">Cliente Satisfecho</span></div></div>
+        <div class="testimonial-card"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">"El amigurumi es suave y bellísimo. Me sorprendió el cuidado del paquete."</p><div class="testimonial-author"><span class="author-name">Laura M.</span><span class="author-detail">Cliente Recurrente</span></div></div>
       </div>
       <div class="carousel-nav">
         <button class="carousel-btn" id="carousel-prev">←</button>
@@ -652,24 +346,16 @@
   </div>
 </section>
 
+<!-- ==================== CONTACT ==================== -->
 <section id="contacto" class="contacto">
   <div class="container">
     <h2 class="section-title">📱 Contáctanos</h2>
     <p class="section-subtitle">¿Tienes alguna pregunta? ¡Escríbenos!</p>
     <div class="contact-content">
       <div class="contact-info">
-        <div class="contact-item">
-          <span class="contact-icon">📸</span>
-          <div><h4>Instagram</h4><a href="https://instagram.com/novigardo" target="_blank">@novigardo</a></div>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">💬</span>
-          <div><h4>DM Directo</h4><p>Escríbenos por Instagram para pedidos personalizados</p></div>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">⏰</span>
-          <div><h4>Horario</h4><p>Lunes a Sábado: 9am - 6pm</p></div>
-        </div>
+        <div class="contact-item"><span class="contact-icon">📸</span><div><h4>Instagram</h4><a href="https://www.instagram.com/novigardo_" target="_blank">@novigardo_</a></div></div>
+        <div class="contact-item"><span class="contact-icon">💬</span><div><h4>DM Directo</h4><p>Escríbenos por Instagram para pedidos personalizados</p></div></div>
+        <div class="contact-item"><span class="contact-icon">⏰</span><div><h4>Horario</h4><p>Lunes a Sábado: 9am - 6pm</p></div></div>
       </div>
       <div class="contact-cta">
         <h3>¿Lista para crear tu amigurumi?</h3>
@@ -683,27 +369,11 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-content">
-      <div class="footer-brand">
-        <img src="assets/logo.jpg" alt="Novigardo" class="footer-logo">
-        <p>Amigurumis y Mucho Más</p>
-      </div>
-      <div class="footer-links">
-        <h4>Enlaces</h4>
-        <a href="#hero">Inicio</a>
-        <a href="#personalizar">Personalizar</a>
-        <a href="#galeria">Galería</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <div class="footer-social">
-        <h4>Síguenos</h4>
-        <a href="https://instagram.com/novigardo" target="_blank" class="social-link">📸 Instagram</a>
-      </div>
+      <div class="footer-brand"><img src="assets/logo.jpg" alt="Novigardo" class="footer-logo"><p>Amigurumis y Mucho Más</p></div>
+      <div class="footer-links"><h4>Enlaces</h4><a href="#hero">Inicio</a><a href="#personalizar">Personalizar</a><a href="#galeria">Galería</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+      <div class="footer-social"><h4>Síguenos</h4><a href="https://www.instagram.com/novigardo_" target="_blank" class="social-link">📸 Instagram</a></div>
     </div>
-    <div class="footer-copyright">
-      <p>© 2026 Novigardo - Todos los derechos reservados</p>
-      <p>Hecho con 💝 y mucho hilo</p>
-    </div>
+    <div class="footer-copyright"><p>© 2026 Novigardo - Todos los derechos reservados</p><p>Hecho con 💝 y mucho hilo</p></div>
   </div>
 </footer>
 
@@ -711,13 +381,8 @@
   <div class="modal">
     <button class="modal-close" id="modal-close">✕</button>
     <h3 class="modal-title">📋 Resumen de tu Pedido</h3>
-    <div class="order-summary" id="order-summary">
-      <!-- JS will populate this -->
-    </div>
-    <div class="modal-price">
-      <span>Total:</span>
-      <span class="modal-total" id="modal-total">$0</span>
-    </div>
+    <div class="order-summary" id="order-summary"></div>
+    <div class="modal-price"><span>Total Estimado:</span><span class="modal-total" id="modal-total">$0</span></div>
     <a href="#" class="btn btn-cta modal-btn" id="instagram-link" target="_blank">📱 Enviar a Instagram</a>
     <p class="modal-note">Se abrirá Instagram con tu pedido listo para enviar</p>
   </div>

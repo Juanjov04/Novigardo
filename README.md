@@ -12,7 +12,7 @@
 - 👗 **Ropa**: Overol, Vestido, Suéter, Falda, Pantalón, Pijama, Capa o Sin ropa
 - 🎀 **Accesorios** (selección múltiple): Moño, Collar, Lentes, Flores, Gorrito, Bufanda, Bolsito, Corona
 
-El precio se actualiza en tiempo real según las opciones elegidas. Al finalizar, el cliente puede enviar su pedido directamente por Instagram DM a [@novigardo](https://instagram.com/novigardo).
+El precio se actualiza en tiempo real según las opciones elegidas. Al finalizar, el cliente puede enviar su pedido directamente por Instagram DM a [@novigardo_](https://www.instagram.com/novigardo_).
 
 ## 🖥️ Demo
 
